@@ -36,3 +36,9 @@ steps:
     javaHomeOption: 'JDKVersion'
     sonarQubeRunAnalysis: false
     spotBugsAnalysis: false
+- task: JenkinsQueueJob@2
+  inputs:
+    jobName: 'web'
+    captureConsole: true
+    capturePipeline: true
+    isParameterizedJob: false
